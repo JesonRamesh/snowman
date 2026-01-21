@@ -6,11 +6,11 @@ fig, ax = plt.subplots()
 
 # --- Body ---
 # Bottom circle
-bottom_circle = plt.Circle((0.5, 0.3), 0.25, color='white', ec='black')
+bottom_circle = plt.Circle((0.5, 0.3), 0.25, color='white', ec='white')
 ax.add_patch(bottom_circle)
 
 # Middle circle
-middle_circle = plt.Circle((0.5, 0.7), 0.2, color='white', ec='black')
+middle_circle = plt.Circle((0.5, 0.7), 0.2, color='white', ec='white')
 ax.add_patch(middle_circle)
 
 # Head circle
@@ -24,9 +24,6 @@ right_eye = plt.Circle((0.55, 1.05), 0.02, color='black')
 ax.add_patch(left_eye)
 ax.add_patch(right_eye)
 
-# Nose (a triangle)
-nose = plt.Polygon([[0.5, 1.0], [0.5, 0.95], [0.6, 0.98]], color='orange')
-ax.add_patch(nose)
 
 # Mouth (a few small circles)
 mouth_dot1 = plt.Circle((0.47, 0.92), 0.01, color='black')
